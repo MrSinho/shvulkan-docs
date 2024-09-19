@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>shvulkan</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__c_1_2__home_2desktop_2github_2shvulkan_2_r_e_a_d_m_e"/></para>
+<para><image type="html" name="https://img.shields.io/badge/shvulkan%20|%20SINHO%20SOFTWORKS-3CFADC?style=for-the-badge&amp;logo=&amp;logoColor=white&amp;labelColor=990042" inline="yes"></image>
+ <ulink url="https://github.com/mrsinho/shvulkan"><image type="html" name="https://img.shields.io/badge/GitHub_repository-3CFADC?style=for-the-badge&amp;logo=github&amp;logoColor=black" inline="yes"></image>
+</ulink></para>
+<para><computeroutput>shvulkan</computeroutput> is a lightweight and flexible wrapper around the Vulkan API written completely in C, that makes it easier to work with graphics efficiently without writing thousands of lines of code.</para>
+<para><image type="html" name="alpha-blending.png"></image>
+ <image type="latex" name="alpha-blending.png"></image>
+ <image type="rtf" name="alpha-blending.png"></image>
+ <image type="docbook" name="alpha-blending.png"></image>
+ <image type="xml" name="alpha-blending.png"></image>
+</para>
+<para><bold>Scene example</bold>: <emphasis>alfa blending, instancing and indexed draw calls example</emphasis></para>
+<para><hruler/>
+</para>
+<sect1 id="index_1autotoc_md2">
+<title>Build status</title><para><image type="html" name="https://img.shields.io/badge/Written_in_C-3CFADC?style=for-the-badge&amp;logo=c&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" inline="yes"></image>
+ <image type="html" name="https://img.shields.io/badge/Compatible_with_C%2b%2b-3CFADC?style=for-the-badge&amp;logo=c%2b%2b&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" inline="yes"></image>
+</para>
+<para>The examples are frequently being tested on Windows 11, Linux Mint (virtual machine and pc) with different compilers (MSVC, gcc), and hardware configurations (RX580 4GB GDDR5, Radeon V Carrizo 500MB).</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md4">
+<title>To do</title><para><itemizedlist>
+<listitem><para>texture examples (graphics and plain data)</para>
+</listitem><listitem><para>Error/debug/info logging to file</para>
+</listitem><listitem><para>read spirv assembly (not sure about this)</para>
+</listitem><listitem><para>ray tracing example</para>
+</listitem></itemizedlist>
+</para>
+<para><hruler/>
+ </para>
+</sect1>
+    </detaileddescription>
+    <location file="C:/_home/desktop/github/shvulkan/README.md"/>
+  </compounddef>
+</doxygen>

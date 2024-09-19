@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_8e54f3f07aee11fda06f10766dc5f42f" kind="dir">
+    <compoundname>C:/_home/desktop/github/shvulkan/shvulkan/include</compoundname>
+    <innerdir refid="dir_919470401d6db02a30b4d148ae33372e">C:/_home/desktop/github/shvulkan/shvulkan/include/shvulkan</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_home/desktop/github/shvulkan/shvulkan/include/"/>
+  </compounddef>
+</doxygen>

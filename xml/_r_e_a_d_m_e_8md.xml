@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>shvulkan</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://img.shields.io/badge/shvulkan%20|%20SINHO%20SOFTWORKS-3CFADC?style=for-the-badge&amp;logo=&amp;logoColor=white&amp;labelColor=990042)</highlight></codeline>
+<codeline><highlight class="normal">[![](https://img.shields.io/badge/GitHub_repository-3CFADC?style=for-the-badge&amp;logo=github&amp;logoColor=black)](https://github.com/mrsinho/shvulkan)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[TOC]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`shvulkan`<sp/>is<sp/>a<sp/>lightweight<sp/>and<sp/>flexible<sp/>wrapper<sp/>around<sp/>the<sp/>Vulkan<sp/>API<sp/>written<sp/>completely<sp/>in<sp/>C,<sp/>that<sp/>makes<sp/>it<sp/>easier<sp/>to<sp/>work<sp/>with<sp/>graphics<sp/>efficiently<sp/>without<sp/>writing<sp/>thousands<sp/>of<sp/>lines<sp/>of<sp/>code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](./docs/media/alpha-blending.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">__Scene<sp/>example__:<sp/>*alfa<sp/>blending,<sp/>instancing<sp/>and<sp/>indexed<sp/>draw<sp/>calls<sp/>example*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Build<sp/>status</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](https://img.shields.io/badge/Written_in_C-3CFADC?style=for-the-badge&amp;logo=c&amp;logoColor=white&amp;labelColor=0AD0DF#.svg)</highlight></codeline>
+<codeline><highlight class="normal">![](https://img.shields.io/badge/Compatible_with_C%2b%2b-3CFADC?style=for-the-badge&amp;logo=c%2b%2b&amp;logoColor=white&amp;labelColor=0AD0DF#.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>examples<sp/>are<sp/>frequently<sp/>being<sp/>tested<sp/>on<sp/>Windows<sp/>11,<sp/>Linux<sp/>Mint<sp/>(virtual<sp/>machine<sp/>and<sp/>pc)<sp/>with<sp/>different<sp/>compilers<sp/>(MSVC,<sp/>gcc),<sp/>and<sp/>hardware<sp/>configurations<sp/>(RX580<sp/>4GB<sp/>GDDR5,<sp/>Radeon<sp/>V<sp/>Carrizo<sp/>500MB).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>To<sp/>do</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>texture<sp/>examples<sp/>(graphics<sp/>and<sp/>plain<sp/>data)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Error/debug/info<sp/>logging<sp/>to<sp/>file</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>read<sp/>spirv<sp/>assembly<sp/>(not<sp/>sure<sp/>about<sp/>this)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>ray<sp/>tracing<sp/>example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/_home/desktop/github/shvulkan/README.md"/>
+  </compounddef>
+</doxygen>
