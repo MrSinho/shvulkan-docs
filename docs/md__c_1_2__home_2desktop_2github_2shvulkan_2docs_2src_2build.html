@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>shvulkan: shvulkan</title>
+<title>shvulkan: Build shvulkan</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,7 +101,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('index.html',''); initResizable(true); });
+$(function(){initNavTree('md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2build.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -127,43 +127,25 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">shvulkan </div></div>
+  <div class="headertitle"><div class="title">Build shvulkan</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md2">Build status</a>
+    <a href="#autotoc_md10">Clone and Build</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md3">Clone and Build</a>
+    <a href="#autotoc_md12">CMake targets and variables</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md5">CMake targets and variables</a>
-  </li>
-  <li class="level1">
-    <a href="#autotoc_md7">Embed shvulkan with your C/C++ projects</a>
-  </li>
-  <li class="level1">
-    <a href="#autotoc_md8">Examples</a>
+    <a href="#autotoc_md13">Embed shvulkan with your C/C++ projects</a>
   </li>
 </ul>
 </div>
-<div class="textblock"><p><a class="anchor" id="md__c_1_2__home_2desktop_2github_2shvulkan_2_r_e_a_d_m_e"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md9"></a></p>
 <p><img src="https://img.shields.io/badge/shvulkan%20|%20SINHO%20SOFTWORKS-3CFADC?style=for-the-badge&amp;logo=&amp;logoColor=white&amp;labelColor=990042" alt="" class="inline"/> <a href="https://github.com/mrsinho/shvulkan"><img src="https://img.shields.io/badge/GitHub_repository-3CFADC?style=for-the-badge&amp;logo=github&amp;logoColor=black" alt="" class="inline"/></a></p>
-<p><code>shvulkan</code> is a lightweight and flexible wrapper around the Vulkan API written completely in C, that makes it easier to work with graphics efficiently without writing thousands of lines of code.</p>
-<div class="image">
-<img src="alpha-blending.png" alt=""/>
-</div>
-    <p><b>Scene example</b>: <em>alfa blending, instancing and indexed draw calls example.</em></p>
-<p><img src="scene-headless-overview.png" alt="" class="inline"/>    </p>
-<p><b>Headless scene example using <a href="https://github.com/mrsinho/vulkan-virtual-outputs">vulkan-virtual-outputs</a></b>: <em>alfa blending, instancing and indexed draw calls also here, but the images are streamed in an http server.</em></p>
-<hr  />
-<h1><a class="anchor" id="autotoc_md2"></a>
-Build status</h1>
-<p><img src="https://img.shields.io/badge/Written_in_C-3CFADC?style=for-the-badge&amp;logo=c&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" alt="" class="inline"/> <img src="https://img.shields.io/badge/Compatible_with_C%2b%2b-3CFADC?style=for-the-badge&amp;logo=c%2b%2b&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" alt="" class="inline"/></p>
-<p>The examples are frequently being tested on Windows 11, Linux Mint (virtual machine and pc) with different compilers (MSVC, gcc), and hardware configurations (RX580 4GB GDDR5, Radeon V Carrizo 500MB).</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Clone and Build</h1>
 <p>Open the terminal and run the following commands:</p>
 <div class="fragment"><div class="line">git clone --recursive https://github.com/mrsinho/shvulkan.git</div>
@@ -173,7 +155,7 @@ Clone and Build</h1>
 <div class="line">cmake -DSH_VULKAN_BUILD_EXAMPLES=ON ..</div>
 <div class="line">cmake --build .</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 CMake targets and variables</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -200,8 +182,7 @@ CMake targets and variables</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">SH_VULKAN_BINARIES_DIR   </td><td class="markdownTableBodyNone">Absolute path to the output binaries directory   </td></tr>
 </table>
-<hr  />
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Embed shvulkan with your C/C++ projects</h1>
 <p>To link to the <code>shvulkan</code> library with CMake:</p>
 <div class="fragment"><div class="line">if (NOT TARGET shvulkan)</div>
@@ -220,12 +201,8 @@ Embed shvulkan with your C/C++ projects</h1>
 </div><!-- fragment --><p>Then, include the <code><a class="el" href="sh_vulkan_8h.html">shVulkan.h</a></code> header file:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sh_vulkan_8h.html">shvulkan/shVulkan.h</a>&quot;</span>&gt;</div>
 <div class="ttc" id="ash_vulkan_8h_html"><div class="ttname"><a href="sh_vulkan_8h.html">shVulkan.h</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md8"></a>
-Examples</h1>
-<p><code>shvulkan</code> ships with one <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/compute/power-numbers.c"><code>compute example</code></a>, one graphics <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/clear-color.c"><code>clear color example</code></a>, one graphics <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/scene.c"><code>scene example</code></a> and a <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/clear-color.c"><code>headless scene</code></a> graphics example, which instead of presenting images to the screen it streams the graphics output with an http server. </p>
-</div></div><!-- PageDoc -->
-<a href="doxygen_crawl.html"></a>
-</div><!-- contents -->
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

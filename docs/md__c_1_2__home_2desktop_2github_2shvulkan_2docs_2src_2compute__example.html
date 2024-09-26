@@ -133,39 +133,39 @@ $(function(){initNavTree('md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_
 <div class="toc"><h3>Table of Contents</h3>
 <ul>
   <li class="level1">
-    <a href="#autotoc_md26">Memory Allocation</a>
+    <a href="#autotoc_md28">Memory Allocation</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md27">Compute Pipeline</a>
+    <a href="#autotoc_md29">Compute Pipeline</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md28">Compute Queue Submission</a>
+    <a href="#autotoc_md30">Compute Queue Submission</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md29">GPU Memory reading and cleanup</a>
+    <a href="#autotoc_md31">GPU Memory reading and cleanup</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md30">Terminal output</a>
+    <a href="#autotoc_md32">Terminal output</a>
   </li>
 </ul>
 </div>
-<div class="textblock"><p><a class="anchor" id="autotoc_md25"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md27"></a></p>
 <p><img src="https://img.shields.io/badge/shvulkan%20|%20SINHO%20SOFTWORKS-3CFADC?style=for-the-badge&amp;logo=&amp;logoColor=white&amp;labelColor=990042" alt="" class="inline"/> <a href="https://github.com/mrsinho/shvulkan"><img src="https://img.shields.io/badge/GitHub_repository-3CFADC?style=for-the-badge&amp;logo=github&amp;logoColor=black" alt="" class="inline"/></a></p>
 <p>The compute example demonstrates the setup and execution of a Vulkan-based compute shader application. The application starts by initializing Vulkan components, including creating an instance, selecting a physical device, and setting up a logical device with a compute queue. A command pool and command buffer are also created to handle command submissions.</p>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Memory Allocation</h1>
 <p>The primary objective of this application is to perform computations using a compute shader. The application first prepares memory by setting up staging and device-local buffers. The staging buffer is used for host-visible memory, allowing the CPU to write data to it. This data includes an array of input values and a factor. This buffer is then copied to a device-local buffer, which is optimized for GPU access.</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
 Compute Pipeline</h1>
 <p>Next, the compute pipeline is set up. This involves defining descriptor sets and layout bindings, creating and setting up shader modules, and configuring the compute pipeline. The compute shader is responsible for performing operations on the input data. In this example, the shader is designed to square the input values.</p>
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md30"></a>
 Compute Queue Submission</h1>
 <p>Once the pipeline is ready, the application records commands into the command buffer. This includes binding the compute pipeline and descriptor sets, and dispatching compute work to the GPU. After recording, the command buffer is submitted to the compute queue, and the application waits for the operations to complete.</p>
-<h1><a class="anchor" id="autotoc_md29"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 GPU Memory reading and cleanup</h1>
 <p>After the computation, the application copies the results from the device-local buffer back to the staging buffer. This allows the CPU to access and read the results of the computation. The final step involves reading the output values from the staging buffer and printing them to the console.</p>
 <p>The application concludes by cleaning up resources, including destroying Vulkan objects and freeing allocated memory.</p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md32"></a>
 Terminal output</h1>
 <div class="fragment"><div class="line">Compute shader inputs:</div>
 <div class="line">0.000000</div>
