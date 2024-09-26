@@ -26,24 +26,26 @@ var NAVTREE =
 [
   [ "shvulkan", "index.html", [
     [ "Build status", "index.html#autotoc_md2", null ],
-    [ "To do", "index.html#autotoc_md4", null ],
+    [ "Clone and Build", "index.html#autotoc_md3", null ],
+    [ "CMake targets and variables", "index.html#autotoc_md5", null ],
+    [ "Examples", "index.html#autotoc_md7", null ],
     [ "Build shvulkan", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2install.html", [
-      [ "Clone and Build", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2install.html#autotoc_md7", null ],
-      [ "CMake targets and variables", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2install.html#autotoc_md9", null ]
+      [ "Clone and Build", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2install.html#autotoc_md9", null ],
+      [ "CMake targets and variables", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2install.html#autotoc_md11", null ]
     ] ],
     [ "Clear Color Example", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2clear__color__example.html", null ],
     [ "Scene Example", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html", [
-      [ "Scene", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md19", null ],
-      [ "Draw Loop Architecture", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md20", null ],
-      [ "Memory Management", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md21", null ],
-      [ "Memory Release", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md22", null ]
+      [ "Scene", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md21", null ],
+      [ "Draw Loop Architecture", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md22", null ],
+      [ "Memory Management", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md23", null ],
+      [ "Memory Release", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md24", null ]
     ] ],
     [ "Compute Example", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html", [
-      [ "Memory Allocation", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md24", null ],
-      [ "Compute Pipeline", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md25", null ],
-      [ "Compute Queue Submission", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md26", null ],
-      [ "GPU Memory reading and cleanup", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md27", null ],
-      [ "Terminal output", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md28", null ]
+      [ "Memory Allocation", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md26", null ],
+      [ "Compute Pipeline", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md27", null ],
+      [ "Compute Queue Submission", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md28", null ],
+      [ "GPU Memory reading and cleanup", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md29", null ],
+      [ "Terminal output", "md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2compute__example.html#autotoc_md30", null ]
     ] ],
     [ "Linux build logs", "md__c_1_2__home_2desktop_2github_2shvulkan_2_8shci_2linux_2log.html", null ],
     [ "Windows build logs", "md__c_1_2__home_2desktop_2github_2shvulkan_2_8shci_2windows_2log.html", null ],
@@ -61,6 +63,8 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -69,7 +73,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"struct_sh_vk_pipeline_pool.html#a1f5f31efc7c51baeecdb481f70604a3d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

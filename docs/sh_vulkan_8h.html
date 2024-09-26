@@ -131,6 +131,7 @@ $(function(){initNavTree('sh_vulkan_8h.html',''); initResizable(true); });
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">shVulkan.h File Reference</div></div>
 </div><!--header-->
@@ -176,6 +177,16 @@ Macros</h2></td></tr>
 <tr class="separator:ad78f8180c37d24de5dbaa868aaf45258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31c43c37127b14c5326878d99876b344" id="r_a31c43c37127b14c5326878d99876b344"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31c43c37127b14c5326878d99876b344">SH_MAX_STACK_SURFACE_PRESENT_MODE_COUNT</a>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:a31c43c37127b14c5326878d99876b344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383c4ece797ce47ba36a2d5242c546e3" id="r_a383c4ece797ce47ba36a2d5242c546e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a383c4ece797ce47ba36a2d5242c546e3">SH_MAX_STACK_DEVICE_COLOR_FORMATS_QUERIES</a>&#160;&#160;&#160;44</td></tr>
+<tr class="separator:a383c4ece797ce47ba36a2d5242c546e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e2240a35539bfbf65ca7c69dcb31b0" id="r_a00e2240a35539bfbf65ca7c69dcb31b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00e2240a35539bfbf65ca7c69dcb31b0">SH_FORMAT_UINT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a00e2240a35539bfbf65ca7c69dcb31b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92949a61b4a5a9503ca98e8a0e12dda" id="r_aa92949a61b4a5a9503ca98e8a0e12dda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa92949a61b4a5a9503ca98e8a0e12dda">SH_FORMAT_SINT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa92949a61b4a5a9503ca98e8a0e12dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c9d9d5c140d5730146622702bc14f9" id="r_a95c9d9d5c140d5730146622702bc14f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c9d9d5c140d5730146622702bc14f9">SH_FORMAT_SFLOAT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a95c9d9d5c140d5730146622702bc14f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2386429c07139c95076e828f3e58bdfe" id="r_a2386429c07139c95076e828f3e58bdfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2386429c07139c95076e828f3e58bdfe">SH_FORMAT_UNDEFINED</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a2386429c07139c95076e828f3e58bdfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b3da538ae24e044689f28fe523a42a" id="r_af5b3da538ae24e044689f28fe523a42a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b3da538ae24e044689f28fe523a42a">SH_VEC1_SIGNED_FLOAT</a>&#160;&#160;&#160;VK_FORMAT_R32_SFLOAT</td></tr>
 <tr class="separator:af5b3da538ae24e044689f28fe523a42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4499e0115203b2c721bfbc53176d35a" id="r_ae4499e0115203b2c721bfbc53176d35a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4499e0115203b2c721bfbc53176d35a">SH_VEC2_SIGNED_FLOAT</a>&#160;&#160;&#160;VK_FORMAT_R32G32_SFLOAT</td></tr>
@@ -239,12 +250,28 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aaccfb38ea85b91664878d2596ec39da1" id="r_aaccfb38ea85b91664878d2596ec39da1"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaccfb38ea85b91664878d2596ec39da1">ShImageChannelTypeFlags</a></td></tr>
+<tr class="separator:aaccfb38ea85b91664878d2596ec39da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaa31bc1ed7627ffa2cd0a8415230dfa" id="r_adaa31bc1ed7627ffa2cd0a8415230dfa"><td class="memItemLeft" align="right" valign="top">typedef struct ShVkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaa31bc1ed7627ffa2cd0a8415230dfa">ShVkPipeline</a></td></tr>
 <tr class="memdesc:adaa31bc1ed7627ffa2cd0a8415230dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure representing a Vulkan pipeline.  <br /></td></tr>
 <tr class="separator:adaa31bc1ed7627ffa2cd0a8415230dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e29521dee75adcd4c4007570df5103" id="r_a50e29521dee75adcd4c4007570df5103"><td class="memItemLeft" align="right" valign="top">typedef struct ShVkPipelinePool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50e29521dee75adcd4c4007570df5103">ShVkPipelinePool</a></td></tr>
 <tr class="memdesc:a50e29521dee75adcd4c4007570df5103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a collection of Vulkan pipeline objects and their related resources.  <br /></td></tr>
 <tr class="separator:a50e29521dee75adcd4c4007570df5103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9d7f7eadebd45156134f5a2742d6e6e1" id="r_a9d7f7eadebd45156134f5a2742d6e6e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a> { <br />
+&#160;&#160;<a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a86b9e1f5698d22f0c949d5b6c0134721">SH_IMAGE_CHANNEL_TYPE_UNORM</a> = 1 &lt;&lt; 0
+, <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a85faeb403a26c3901d493710e866e28a">SH_IMAGE_CHANNEL_TYPE_SNORM</a> = 1 &lt;&lt; 1
+, <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a977bde39d93f048e5437aa3b82e0101e">SH_IMAGE_CHANNEL_TYPE_UINT</a> = 1 &lt;&lt; 2
+, <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a9d8cf9d654e66965d1c901cfa31c5666">SH_IMAGE_CHANNEL_TYPE_SINT</a> = 1 &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a39ca6190179b0a04aa18b99608a33220">SH_IMAGE_CHANNEL_TYPE_SFLOAT</a> = 1 &lt;&lt; 4
+, <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1a979ee9012146f1ca54b23d5df12f903a">SH_IMAGE_CHANNEL_TYPE_UNDEFINED</a> = UINT32_MAX
+<br />
+ }</td></tr>
+<tr class="separator:a9d7f7eadebd45156134f5a2742d6e6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -281,6 +308,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ae7c6c9c1c42d68b7a822aa800e0ff2da" id="r_ae7c6c9c1c42d68b7a822aa800e0ff2da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7c6c9c1c42d68b7a822aa800e0ff2da">shGetDeviceQueues</a> (VkDevice device, uint32_t queue_count, uint32_t *p_queue_family_indices, VkQueue *p_queues)</td></tr>
 <tr class="memdesc:ae7c6c9c1c42d68b7a822aa800e0ff2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the Vulkan queues from a device.  <br /></td></tr>
 <tr class="separator:ae7c6c9c1c42d68b7a822aa800e0ff2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93ee8c746906227e234a79e7ed91e44" id="r_ab93ee8c746906227e234a79e7ed91e44"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93ee8c746906227e234a79e7ed91e44">shCheckSupportedDeviceColorFormat</a> (VkPhysicalDevice physical_device, VkFormat format, uint8_t *p_color_attachment_supported)</td></tr>
+<tr class="separator:ab93ee8c746906227e234a79e7ed91e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a002d56c6d4e2093298afec80eaac4" id="r_a22a002d56c6d4e2093298afec80eaac4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22a002d56c6d4e2093298afec80eaac4">shFindSupportedDeviceColorFormats</a> (VkPhysicalDevice physical_device, uint32_t min_channel_count, uint32_t max_channel_count, uint32_t min_channel_size, uint32_t max_channel_size, <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a> channel_types, uint32_t *p_supported_format_count, VkFormat *p_supported_formats, uint32_t *p_channels_count, uint32_t *p_single_channels_sizes, uint32_t *p_channels_types)</td></tr>
+<tr class="separator:a22a002d56c6d4e2093298afec80eaac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac273a3ab720fa921933fbef204e6eee9" id="r_ac273a3ab720fa921933fbef204e6eee9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac273a3ab720fa921933fbef204e6eee9">shCreateSwapchain</a> (VkDevice device, VkPhysicalDevice physical_device, VkSurfaceKHR surface, VkFormat image_format, VkFormat *p_image_format, uint32_t swapchain_image_count, VkSharingMode image_sharing_mode, uint8_t vsync, uint32_t *p_swapchain_image_count, VkSwapchainKHR *p_swapchain)</td></tr>
 <tr class="memdesc:ac273a3ab720fa921933fbef204e6eee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Vulkan swapchain.  <br /></td></tr>
 <tr class="separator:ac273a3ab720fa921933fbef204e6eee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,18 +447,22 @@ Functions</h2></td></tr>
 <tr class="memitem:ab059596a5bf5ae02d5063cf821b506e5" id="r_ab059596a5bf5ae02d5063cf821b506e5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab059596a5bf5ae02d5063cf821b506e5">shAllocateBufferMemory</a> (VkDevice device, VkPhysicalDevice physical_device, VkBuffer buffer, VkMemoryPropertyFlags property_flags, VkDeviceMemory *p_memory)</td></tr>
 <tr class="memdesc:ab059596a5bf5ae02d5063cf821b506e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for a Vulkan buffer.  <br /></td></tr>
 <tr class="separator:ab059596a5bf5ae02d5063cf821b506e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9a72775bcb8b1556e2753ec385456e" id="r_ace9a72775bcb8b1556e2753ec385456e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace9a72775bcb8b1556e2753ec385456e">shCopyBuffer</a> (VkCommandBuffer transfer_cmd_buffer, VkBuffer src_buffer, uint32_t src_offset, uint32_t dst_offset, uint32_t size, VkBuffer dst_buffer)</td></tr>
-<tr class="memdesc:ace9a72775bcb8b1556e2753ec385456e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from one Vulkan buffer to another.  <br /></td></tr>
-<tr class="separator:ace9a72775bcb8b1556e2753ec385456e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88908f30187bab0ff08d3afbc84458cc" id="r_a88908f30187bab0ff08d3afbc84458cc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88908f30187bab0ff08d3afbc84458cc">shCopyBuffer</a> (VkCommandBuffer transfer_cmd_buffer, VkBuffer src_buffer, uint32_t src_offset, uint32_t dst_offset, uint64_t size, VkBuffer dst_buffer)</td></tr>
+<tr class="memdesc:a88908f30187bab0ff08d3afbc84458cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from one Vulkan buffer to another.  <br /></td></tr>
+<tr class="separator:a88908f30187bab0ff08d3afbc84458cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1758a4d7503f4ea20d470d189edb8e3b" id="r_a1758a4d7503f4ea20d470d189edb8e3b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1758a4d7503f4ea20d470d189edb8e3b">shCopyBufferRegions</a> (VkCommandBuffer transfer_cmd_buffer, VkBuffer src_buffer, uint32_t region_count, uint32_t *p_src_offsets, uint32_t *p_dst_offsets, uint32_t *p_sizes, VkBuffer dst_buffer)</td></tr>
 <tr class="memdesc:a1758a4d7503f4ea20d470d189edb8e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies multiple regions of data from one Vulkan buffer to another.  <br /></td></tr>
 <tr class="separator:a1758a4d7503f4ea20d470d189edb8e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bf1d2ca1b1ce2cf8673df951fb2bf6" id="r_ac3bf1d2ca1b1ce2cf8673df951fb2bf6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bf1d2ca1b1ce2cf8673df951fb2bf6">shCopyImage</a> (VkCommandBuffer transfer_cmd_buffer, uint32_t width, uint32_t height, VkImageAspectFlags src_image_aspect, VkImageAspectFlags dst_image_aspect, VkImage src_image, VkImage dst_image)</td></tr>
+<tr class="separator:ac3bf1d2ca1b1ce2cf8673df951fb2bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af810507ba72a2201519c71fc1a1f2125" id="r_af810507ba72a2201519c71fc1a1f2125"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af810507ba72a2201519c71fc1a1f2125">shBindBufferMemory</a> (VkDevice device, VkBuffer buffer, uint32_t offset, VkDeviceMemory buffer_memory)</td></tr>
 <tr class="memdesc:af810507ba72a2201519c71fc1a1f2125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a Vulkan buffer to a specified memory offset.  <br /></td></tr>
 <tr class="separator:af810507ba72a2201519c71fc1a1f2125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea61ced1cd6c295552d1aea9cbdedba" id="r_a0ea61ced1cd6c295552d1aea9cbdedba"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ea61ced1cd6c295552d1aea9cbdedba">shReadMemory</a> (VkDevice device, VkDeviceMemory memory, uint32_t offset, uint32_t data_size, void *p_data)</td></tr>
-<tr class="memdesc:a0ea61ced1cd6c295552d1aea9cbdedba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a Vulkan memory object.  <br /></td></tr>
-<tr class="separator:a0ea61ced1cd6c295552d1aea9cbdedba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa823fb95bcc1b79a23394046e2566d41" id="r_aa823fb95bcc1b79a23394046e2566d41"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa823fb95bcc1b79a23394046e2566d41">shReadMemory</a> (VkDevice device, VkDeviceMemory memory, uint32_t offset, uint64_t data_size, void **pp_map_data, void *p_dst_data)</td></tr>
+<tr class="memdesc:aa823fb95bcc1b79a23394046e2566d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a Vulkan memory object.  <br /></td></tr>
+<tr class="separator:aa823fb95bcc1b79a23394046e2566d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1907762caa24a7af9c85a0a511b004f2" id="r_a1907762caa24a7af9c85a0a511b004f2"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1907762caa24a7af9c85a0a511b004f2">shUnmapMemory</a> (VkDevice device, VkDeviceMemory memory)</td></tr>
+<tr class="separator:a1907762caa24a7af9c85a0a511b004f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e99eee8a784324373dac95ff82580bc" id="r_a2e99eee8a784324373dac95ff82580bc"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e99eee8a784324373dac95ff82580bc">shWriteMemory</a> (VkDevice device, VkDeviceMemory memory, uint32_t offset, uint32_t data_size, void *p_data)</td></tr>
 <tr class="memdesc:a2e99eee8a784324373dac95ff82580bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to a Vulkan memory object.  <br /></td></tr>
 <tr class="separator:a2e99eee8a784324373dac95ff82580bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,6 +481,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4fdc1d058c2e8566b99c570a8eb8915" id="r_ad4fdc1d058c2e8566b99c570a8eb8915"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4fdc1d058c2e8566b99c570a8eb8915">shClearImageMemory</a> (VkDevice device, VkImage image, VkDeviceMemory image_memory)</td></tr>
 <tr class="memdesc:ad4fdc1d058c2e8566b99c570a8eb8915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears memory associated with a Vulkan image.  <br /></td></tr>
 <tr class="separator:ad4fdc1d058c2e8566b99c570a8eb8915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49de1107c7467d37458ba5c127a6d479" id="r_a49de1107c7467d37458ba5c127a6d479"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49de1107c7467d37458ba5c127a6d479">shGetImageSubresourceLayout</a> (VkDevice device, VkImage image, VkImageAspectFlags image_aspect_mask, VkSubresourceLayout *p_subresource_layout)</td></tr>
+<tr class="separator:a49de1107c7467d37458ba5c127a6d479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7526501d7f3603d2cb7b091903e4ef9c" id="r_a7526501d7f3603d2cb7b091903e4ef9c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7526501d7f3603d2cb7b091903e4ef9c">shSetBufferMemoryBarrier</a> (VkDevice device, VkCommandBuffer cmd_buffer, VkBuffer buffer, VkAccessFlags access_before_barrier, VkAccessFlags access_after_barrier, uint32_t performing_queue_family_index_before_barrier, uint32_t performing_queue_family_index_after_barrier, VkPipelineStageFlags pipeline_stage_before_barrier, VkPipelineStageFlags pipeline_stage_after_barrier)</td></tr>
+<tr class="memdesc:a7526501d7f3603d2cb7b091903e4ef9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a buffer memory barrier.  <br /></td></tr>
+<tr class="separator:a7526501d7f3603d2cb7b091903e4ef9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd95337f254d38f196f61644502efb4" id="r_a7fd95337f254d38f196f61644502efb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fd95337f254d38f196f61644502efb4">shSetImageMemoryBarrier</a> (VkDevice device, VkCommandBuffer cmd_buffer, VkImage image, VkImageAspectFlags image_aspect_mask, VkAccessFlags access_before_barrier, VkAccessFlags access_after_barrier, VkImageLayout image_layout_before_barrier, VkImageLayout image_layout_after_barrier, uint32_t performing_queue_family_index_before_barrier, uint32_t performing_queue_family_index_after_barrier, VkPipelineStageFlags pipeline_stage_before_barrier, VkPipelineStageFlags pipeline_stage_after_barrier)</td></tr>
+<tr class="memdesc:a7fd95337f254d38f196f61644502efb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an image memory barrier.  <br /></td></tr>
+<tr class="separator:a7fd95337f254d38f196f61644502efb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7a14e234bf694e7c36e180f87bef56" id="r_a7a7a14e234bf694e7c36e180f87bef56"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7a14e234bf694e7c36e180f87bef56">shGetMemoryBudgetProperties</a> (VkPhysicalDevice physical_device, VkPhysicalDeviceMemoryBudgetPropertiesEXT *p_memory_budget_properties)</td></tr>
 <tr class="memdesc:a7a7a14e234bf694e7c36e180f87bef56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves memory budget properties for a Vulkan physical device.  <br /></td></tr>
 <tr class="separator:a7a7a14e234bf694e7c36e180f87bef56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,6 +667,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a95c9d9d5c140d5730146622702bc14f9" name="a95c9d9d5c140d5730146622702bc14f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c9d9d5c140d5730146622702bc14f9">&#9670;&#160;</a></span>SH_FORMAT_SFLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_FORMAT_SFLOAT&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa92949a61b4a5a9503ca98e8a0e12dda" name="aa92949a61b4a5a9503ca98e8a0e12dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92949a61b4a5a9503ca98e8a0e12dda">&#9670;&#160;</a></span>SH_FORMAT_SINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_FORMAT_SINT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00e2240a35539bfbf65ca7c69dcb31b0" name="a00e2240a35539bfbf65ca7c69dcb31b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e2240a35539bfbf65ca7c69dcb31b0">&#9670;&#160;</a></span>SH_FORMAT_UINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_FORMAT_UINT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2386429c07139c95076e828f3e58bdfe" name="a2386429c07139c95076e828f3e58bdfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2386429c07139c95076e828f3e58bdfe">&#9670;&#160;</a></span>SH_FORMAT_UNDEFINED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_FORMAT_UNDEFINED&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a43176634bb725eea98ba3eb733bbcd7d" name="a43176634bb725eea98ba3eb733bbcd7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43176634bb725eea98ba3eb733bbcd7d">&#9670;&#160;</a></span>SH_MAX_PIPELINE_POOL_DESCRIPTOR_COUNT</h2>
 
@@ -702,6 +801,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define SH_MAX_STACK_BUFFER_REGION_COUNT&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a383c4ece797ce47ba36a2d5242c546e3" name="a383c4ece797ce47ba36a2d5242c546e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383c4ece797ce47ba36a2d5242c546e3">&#9670;&#160;</a></span>SH_MAX_STACK_DEVICE_COLOR_FORMATS_QUERIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SH_MAX_STACK_DEVICE_COLOR_FORMATS_QUERIES&#160;&#160;&#160;44</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1115,7 +1228,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">((<a class="code hl_struct" href="struct_sh_vk_pipeline_pool.html">ShVkPipelinePool</a>*)calloc(1, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct_sh_vk_pipeline_pool.html">ShVkPipelinePool</a>)))</div>
-<div class="ttc" id="astruct_sh_vk_pipeline_pool_html"><div class="ttname"><a href="struct_sh_vk_pipeline_pool.html">ShVkPipelinePool</a></div><div class="ttdoc">Represents a collection of Vulkan pipeline objects and their related resources.</div><div class="ttdef"><b>Definition</b> shVulkan.h:2378</div></div>
+<div class="ttc" id="astruct_sh_vk_pipeline_pool_html"><div class="ttname"><a href="struct_sh_vk_pipeline_pool.html">ShVkPipelinePool</a></div><div class="ttdoc">Represents a collection of Vulkan pipeline objects and their related resources.</div><div class="ttdef"><b>Definition</b> shVulkan.h:2506</div></div>
 </div><!-- fragment -->
 <p>Allocates a new <a class="el" href="struct_sh_vk_pipeline_pool.html" title="Represents a collection of Vulkan pipeline objects and their related resources.">ShVkPipelinePool</a> structure. </p>
 <p>This macro allocates heap memory for a new <a class="el" href="struct_sh_vk_pipeline_pool.html" title="Represents a collection of Vulkan pipeline objects and their related resources.">ShVkPipelinePool</a> structure and initializes it to zero.</p>
@@ -1264,6 +1377,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="aaccfb38ea85b91664878d2596ec39da1" name="aaccfb38ea85b91664878d2596ec39da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaccfb38ea85b91664878d2596ec39da1">&#9670;&#160;</a></span>ShImageChannelTypeFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a> <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adaa31bc1ed7627ffa2cd0a8415230dfa" name="adaa31bc1ed7627ffa2cd0a8415230dfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adaa31bc1ed7627ffa2cd0a8415230dfa">&#9670;&#160;</a></span>ShVkPipeline</h2>
 
@@ -1295,6 +1422,29 @@ Functions</h2></td></tr>
 
 <p>Represents a collection of Vulkan pipeline objects and their related resources. </p>
 <p>This structure holds arrays of Vulkan pipelines, descriptor set layouts, descriptor pools, and other related resources required to manage and use Vulkan pipelines in a pipeline pool. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a9d7f7eadebd45156134f5a2742d6e6e1" name="a9d7f7eadebd45156134f5a2742d6e6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7f7eadebd45156134f5a2742d6e6e1">&#9670;&#160;</a></span>ShImageChannelTypeFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a86b9e1f5698d22f0c949d5b6c0134721" name="a9d7f7eadebd45156134f5a2742d6e6e1a86b9e1f5698d22f0c949d5b6c0134721"></a>SH_IMAGE_CHANNEL_TYPE_UNORM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a85faeb403a26c3901d493710e866e28a" name="a9d7f7eadebd45156134f5a2742d6e6e1a85faeb403a26c3901d493710e866e28a"></a>SH_IMAGE_CHANNEL_TYPE_SNORM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a977bde39d93f048e5437aa3b82e0101e" name="a9d7f7eadebd45156134f5a2742d6e6e1a977bde39d93f048e5437aa3b82e0101e"></a>SH_IMAGE_CHANNEL_TYPE_UINT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a9d8cf9d654e66965d1c901cfa31c5666" name="a9d7f7eadebd45156134f5a2742d6e6e1a9d8cf9d654e66965d1c901cfa31c5666"></a>SH_IMAGE_CHANNEL_TYPE_SINT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a39ca6190179b0a04aa18b99608a33220" name="a9d7f7eadebd45156134f5a2742d6e6e1a39ca6190179b0a04aa18b99608a33220"></a>SH_IMAGE_CHANNEL_TYPE_SFLOAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9d7f7eadebd45156134f5a2742d6e6e1a979ee9012146f1ca54b23d5df12f903a" name="a9d7f7eadebd45156134f5a2742d6e6e1a979ee9012146f1ca54b23d5df12f903a"></a>SH_IMAGE_CHANNEL_TYPE_UNDEFINED&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -1990,6 +2140,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab93ee8c746906227e234a79e7ed91e44" name="ab93ee8c746906227e234a79e7ed91e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93ee8c746906227e234a79e7ed91e44">&#9670;&#160;</a></span>shCheckSupportedDeviceColorFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shCheckSupportedDeviceColorFormat </td>
+          <td>(</td>
+          <td class="paramtype">VkPhysicalDevice</td>          <td class="paramname"><span class="paramname"><em>physical_device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkFormat</td>          <td class="paramname"><span class="paramname"><em>format</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>p_color_attachment_supported</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aed51494291a04145494c15eb5531f09d" name="aed51494291a04145494c15eb5531f09d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed51494291a04145494c15eb5531f09d">&#9670;&#160;</a></span>shClearBufferMemory()</h2>
 
@@ -2285,8 +2469,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace9a72775bcb8b1556e2753ec385456e" name="ace9a72775bcb8b1556e2753ec385456e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace9a72775bcb8b1556e2753ec385456e">&#9670;&#160;</a></span>shCopyBuffer()</h2>
+<a id="a88908f30187bab0ff08d3afbc84458cc" name="a88908f30187bab0ff08d3afbc84458cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88908f30187bab0ff08d3afbc84458cc">&#9670;&#160;</a></span>shCopyBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2317,7 +2501,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2408,6 +2592,52 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if successful, 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ac3bf1d2ca1b1ce2cf8673df951fb2bf6" name="ac3bf1d2ca1b1ce2cf8673df951fb2bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bf1d2ca1b1ce2cf8673df951fb2bf6">&#9670;&#160;</a></span>shCopyImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shCopyImage </td>
+          <td>(</td>
+          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>transfer_cmd_buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageAspectFlags</td>          <td class="paramname"><span class="paramname"><em>src_image_aspect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageAspectFlags</td>          <td class="paramname"><span class="paramname"><em>dst_image_aspect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>src_image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>dst_image</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3081,7 +3311,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">engine_name</td><td>The name of the engine. </td></tr>
     <tr><td class="paramname">enable_validation_layers</td><td>Flag to enable (1) or disable (0) validation layers. </td></tr>
     <tr><td class="paramname">extension_count</td><td>Number of Vulkan extensions to enable. </td></tr>
-    <tr><td class="paramname">pp_extension_names</td><td>Valid array of extension names to enable. </td></tr>
+    <tr><td class="paramname">pp_extension_names</td><td>Valid array of extension names to enable, if required. </td></tr>
     <tr><td class="paramname">api_version</td><td>The Vulkan API version to use. </td></tr>
     <tr><td class="paramname">p_instance</td><td>Valid destination pointer to the newly created VkInstance.</td></tr>
   </table>
@@ -4630,6 +4860,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a22a002d56c6d4e2093298afec80eaac4" name="a22a002d56c6d4e2093298afec80eaac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a002d56c6d4e2093298afec80eaac4">&#9670;&#160;</a></span>shFindSupportedDeviceColorFormats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shFindSupportedDeviceColorFormats </td>
+          <td>(</td>
+          <td class="paramtype">VkPhysicalDevice</td>          <td class="paramname"><span class="paramname"><em>physical_device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>min_channel_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>max_channel_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>min_channel_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>max_channel_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a9d7f7eadebd45156134f5a2742d6e6e1">ShImageChannelTypeFlags</a></td>          <td class="paramname"><span class="paramname"><em>channel_types</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>p_supported_format_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkFormat *</td>          <td class="paramname"><span class="paramname"><em>p_supported_formats</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>p_channels_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>p_single_channels_sizes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>p_channels_types</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6268c936f366c9a3a1748c3d1982d95c" name="a6268c936f366c9a3a1748c3d1982d95c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6268c936f366c9a3a1748c3d1982d95c">&#9670;&#160;</a></span>shFindValidationLayer()</h2>
 
@@ -4715,6 +5019,45 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if successful, 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a49de1107c7467d37458ba5c127a6d479" name="a49de1107c7467d37458ba5c127a6d479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49de1107c7467d37458ba5c127a6d479">&#9670;&#160;</a></span>shGetImageSubresourceLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shGetImageSubresourceLayout </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageAspectFlags</td>          <td class="paramname"><span class="paramname"><em>image_aspect_mask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkSubresourceLayout *</td>          <td class="paramname"><span class="paramname"><em>p_subresource_layout</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -6665,8 +7008,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ea61ced1cd6c295552d1aea9cbdedba" name="a0ea61ced1cd6c295552d1aea9cbdedba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ea61ced1cd6c295552d1aea9cbdedba">&#9670;&#160;</a></span>shReadMemory()</h2>
+<a id="aa823fb95bcc1b79a23394046e2566d41" name="aa823fb95bcc1b79a23394046e2566d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa823fb95bcc1b79a23394046e2566d41">&#9670;&#160;</a></span>shReadMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6692,12 +7035,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data_size</em></span>, </td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>data_size</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>p_data</em></span>&#160;)</td>
+          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>pp_map_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>p_dst_data</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -6907,7 +7255,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">instance</td><td>Valid Vulkan instance. </td></tr>
-    <tr><td class="paramname">surface</td><td>Valid surface for presentation support. </td></tr>
+    <tr><td class="paramname">surface</td><td>Valid surface if presentation support is required, otherwise it can be set as <code>VK_NULL_HANDLE</code>. </td></tr>
     <tr><td class="paramname">requirements</td><td>Queue family requirements (VkQueueFlags). </td></tr>
     <tr><td class="paramname">p_physical_device</td><td>Valid destination pointer to the selected Vulkan physical device. </td></tr>
     <tr><td class="paramname">p_physical_device_properties</td><td>Valid destination pointer to the properties of the selected physical device. </td></tr>
@@ -6917,6 +7265,88 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 if a suitable device is found, 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a7526501d7f3603d2cb7b091903e4ef9c" name="a7526501d7f3603d2cb7b091903e4ef9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7526501d7f3603d2cb7b091903e4ef9c">&#9670;&#160;</a></span>shSetBufferMemoryBarrier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shSetBufferMemoryBarrier </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>cmd_buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkBuffer</td>          <td class="paramname"><span class="paramname"><em>buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkAccessFlags</td>          <td class="paramname"><span class="paramname"><em>access_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkAccessFlags</td>          <td class="paramname"><span class="paramname"><em>access_after_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>performing_queue_family_index_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>performing_queue_family_index_after_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkPipelineStageFlags</td>          <td class="paramname"><span class="paramname"><em>pipeline_stage_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkPipelineStageFlags</td>          <td class="paramname"><span class="paramname"><em>pipeline_stage_after_barrier</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a buffer memory barrier. </p>
+<p>This function creates a buffer memory barrier to synchronize buffer memory access (e.g. read, write, transfer).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Valid Vulkan device. </td></tr>
+    <tr><td class="paramname">cmd_buffer</td><td>Valid Vulkan command buffer. </td></tr>
+    <tr><td class="paramname">buffer</td><td>Valid Vulkan buffer (target of the barrier). </td></tr>
+    <tr><td class="paramname">access_before_barrier</td><td>Memory access flag before the barrier. </td></tr>
+    <tr><td class="paramname">access_after_barrier</td><td>Memory access flag sfter the barrier. </td></tr>
+    <tr><td class="paramname">performing_queue_family_index_before_barrier</td><td>Performing queue family index before the barrier. </td></tr>
+    <tr><td class="paramname">performing_queue_family_index_after_barrier</td><td>Performing queue family index before the barrier. </td></tr>
+    <tr><td class="paramname">pipeline_stage_before_barrier</td><td>Pipeline stage flag before the barrier. </td></tr>
+    <tr><td class="paramname">pipeline_stage_after_barrier</td><td>Pipeline stage flag after the barrier.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if successful, 0 otherwise. </dd></dl>
 
 </div>
 </div>
@@ -6965,6 +7395,106 @@ Functions</h2></td></tr>
     <tr><td class="paramname">buffer_offset</td><td>Offset in the buffer. </td></tr>
     <tr><td class="paramname">buffer_size</td><td>Size of the buffer. </td></tr>
     <tr><td class="paramname">p_buffer_info</td><td>Valid destination pointer to the Vulkan descriptor buffer info.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if successful, 0 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a7fd95337f254d38f196f61644502efb4" name="a7fd95337f254d38f196f61644502efb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd95337f254d38f196f61644502efb4">&#9670;&#160;</a></span>shSetImageMemoryBarrier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shSetImageMemoryBarrier </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>cmd_buffer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>image</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageAspectFlags</td>          <td class="paramname"><span class="paramname"><em>image_aspect_mask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkAccessFlags</td>          <td class="paramname"><span class="paramname"><em>access_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkAccessFlags</td>          <td class="paramname"><span class="paramname"><em>access_after_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageLayout</td>          <td class="paramname"><span class="paramname"><em>image_layout_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkImageLayout</td>          <td class="paramname"><span class="paramname"><em>image_layout_after_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>performing_queue_family_index_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>performing_queue_family_index_after_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkPipelineStageFlags</td>          <td class="paramname"><span class="paramname"><em>pipeline_stage_before_barrier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkPipelineStageFlags</td>          <td class="paramname"><span class="paramname"><em>pipeline_stage_after_barrier</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an image memory barrier. </p>
+<p>This function creates an image memory barrier to synchronize image memory access (e.g. read, write, transfer).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Valid Vulkan device. </td></tr>
+    <tr><td class="paramname">cmd_buffer</td><td>Valid Vulkan command buffer. </td></tr>
+    <tr><td class="paramname">image</td><td>Valid Vulkan image (target of the barrier). </td></tr>
+    <tr><td class="paramname">image_aspect_mask</td><td>Target image aspect mask. </td></tr>
+    <tr><td class="paramname">access_before_barrier</td><td>Memory access flag before the barrier. </td></tr>
+    <tr><td class="paramname">access_after_barrier</td><td>Memory access flag sfter the barrier. </td></tr>
+    <tr><td class="paramname">image_layout_before_barrier</td><td>Image layout before the barrier. </td></tr>
+    <tr><td class="paramname">image_layout_after_barrier</td><td>Image layout before the barrier. </td></tr>
+    <tr><td class="paramname">performing_queue_family_index_before_barrier</td><td>Performing queue family index before the barrier. </td></tr>
+    <tr><td class="paramname">performing_queue_family_index_after_barrier</td><td>Performing queue family index before the barrier. </td></tr>
+    <tr><td class="paramname">pipeline_stage_before_barrier</td><td>Pipeline stage flag before the barrier. </td></tr>
+    <tr><td class="paramname">pipeline_stage_after_barrier</td><td>Pipeline stage flag after the barrier.</td></tr>
   </table>
   </dd>
 </dl>
@@ -7515,6 +8045,35 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the Vulkan result literal.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is often used in error reporting to provide more descriptive information about Vulkan errors, such as converting <code>VK_ERROR_OUT_OF_HOST_MEMORY</code> to its string form. </dd></dl>
+
+</div>
+</div>
+<a id="a1907762caa24a7af9c85a0a511b004f2" name="a1907762caa24a7af9c85a0a511b004f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1907762caa24a7af9c85a0a511b004f2">&#9670;&#160;</a></span>shUnmapMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t shUnmapMemory </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkDeviceMemory</td>          <td class="paramname"><span class="paramname"><em>memory</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

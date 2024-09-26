@@ -136,7 +136,13 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
     <a href="#autotoc_md2">Build status</a>
   </li>
   <li class="level1">
-    <a href="#autotoc_md4">To do</a>
+    <a href="#autotoc_md3">Clone and Build</a>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md5">CMake targets and variables</a>
+  </li>
+  <li class="level1">
+    <a href="#autotoc_md7">Examples</a>
   </li>
 </ul>
 </div>
@@ -146,23 +152,56 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <div class="image">
 <img src="alpha-blending.png" alt=""/>
 </div>
-    <p><b>Scene example</b>: <em>alfa blending, instancing and indexed draw calls example</em></p>
+    <p><b>Scene example</b>: <em>alfa blending, instancing and indexed draw calls example.</em></p>
+<p><img src="scene-headless-overview.png" alt="" class="inline"/>    </p>
+<p><b>Headless scene example using <a href="https://github.com/mrsinho/vulkan-virtual-outputs">vulkan-virtual-outputs</a></b>: <em>alfa blending, instancing and indexed draw calls also here, but the image is streamed in an http server.</em></p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md2"></a>
 Build status</h1>
 <p><img src="https://img.shields.io/badge/Written_in_C-3CFADC?style=for-the-badge&amp;logo=c&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" alt="" class="inline"/> <img src="https://img.shields.io/badge/Compatible_with_C%2b%2b-3CFADC?style=for-the-badge&amp;logo=c%2b%2b&amp;logoColor=white&amp;labelColor=0AD0DF#.svg" alt="" class="inline"/></p>
 <p>The examples are frequently being tested on Windows 11, Linux Mint (virtual machine and pc) with different compilers (MSVC, gcc), and hardware configurations (RX580 4GB GDDR5, Radeon V Carrizo 500MB).</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Clone and Build</h1>
+<p>Open the terminal and run the following commands:</p>
+<div class="fragment"><div class="line">git clone --recursive https://github.com/mrsinho/shvulkan.git</div>
+<div class="line">cd shvulkan</div>
+<div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake -DSH_VULKAN_BUILD_EXAMPLES=ON ..</div>
+<div class="line">cmake --build .</div>
+</div><!-- fragment --><hr  />
+<h1><a class="anchor" id="autotoc_md5"></a>
+CMake targets and variables</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">CMake Target   </th><th class="markdownTableHeadNone">Type   </th><th class="markdownTableHeadNone">Configure Flags    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">shvulkan   </td><td class="markdownTableBodyNone">library   </td><td class="markdownTableBodyNone">/    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">shvulkan-docs   </td><td class="markdownTableBodyNone">Doxygen outputs   </td><td class="markdownTableBodyNone">/    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">shvulkan-clear-color   </td><td class="markdownTableBodyNone">executable   </td><td class="markdownTableBodyNone">SH_VULKAN_BUILD_EXAMPLES=ON    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">shvulkan-scene   </td><td class="markdownTableBodyNone">executable   </td><td class="markdownTableBodyNone">SH_VULKAN_BUILD_EXAMPLES=ON    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">shvulkan-compute-example   </td><td class="markdownTableBodyNone">executable   </td><td class="markdownTableBodyNone">SH_VULKAN_BUILD_EXAMPLES=ON   </td></tr>
+</table>
+<p>If the cmake option <code>SH_VULKAN_BUILD_EXAMPLES</code> is enabled, the additional <a href="https://github.com/glfw/glfw"><code>glfw</code></a> target will be generated as a static library.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">CMake Variable   </th><th class="markdownTableHeadNone">About    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SH_VULKAN_VERSION   </td><td class="markdownTableBodyNone">Version of the <code>shvulkan</code> library    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SH_VULKAN_ROOT_DIR   </td><td class="markdownTableBodyNone">Absolute path to the root of the repository directory    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SH_VULKAN_BINARIES_DIR   </td><td class="markdownTableBodyNone">Absolute path to the output binaries directory   </td></tr>
+</table>
 <hr  />
-<h1><a class="anchor" id="autotoc_md4"></a>
-To do</h1>
-<ul>
-<li>texture examples (graphics and plain data)</li>
-<li>Error/debug/info logging to file</li>
-<li>read spirv assembly (not sure about this)</li>
-<li>ray tracing example</li>
-</ul>
-<hr  />
- </div></div><!-- PageDoc -->
+<h1><a class="anchor" id="autotoc_md7"></a>
+Examples</h1>
+<p><code>shvulkan</code> ships with one <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/compute/power-numbers.c"><code>compute example</code></a>, one graphics <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/clear-color.c"><code>clear color example</code></a>, one graphics <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/scene.c"><code>scene example</code></a> and a <a href="https://github.com/mrsinho/shvulkan/tree/main/examples/src/graphics/clear-color.c"><code>headless scene</code></a> graphics example, which instead of presenting images to the screen it streams the graphics output with an http server. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->

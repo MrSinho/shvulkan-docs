@@ -9,8 +9,7 @@ var searchData=
   ['descriptor_5fset_5flayouts_6',['descriptor_set_layouts',['../struct_sh_vk_pipeline_pool.html#a0df46032ec731978c983a8956bbcdb86',1,'ShVkPipelinePool']]],
   ['descriptor_5fset_5funit_5fcount_7',['descriptor_set_unit_count',['../struct_sh_vk_pipeline_pool.html#a570b3e878163a4413defd7cf4ddd627b',1,'ShVkPipelinePool']]],
   ['descriptor_5fsets_8',['descriptor_sets',['../struct_sh_vk_pipeline_pool.html#a9b14e9cc6fbff4a1fc2aea96c21b8c98',1,'ShVkPipelinePool']]],
-  ['device_20and_20queue_20setup_9',['Physical Device and Queue Setup',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2clear__color__example.html#autotoc_md12',1,'']]],
-  ['device_20and_20queues_10',['Logical Device and Queues',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2clear__color__example.html#autotoc_md13',1,'']]],
-  ['do_11',['To do',['../index.html#autotoc_md4',1,'']]],
-  ['draw_20loop_20architecture_12',['Draw Loop Architecture',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md20',1,'']]]
+  ['device_20and_20queue_20setup_9',['Physical Device and Queue Setup',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2clear__color__example.html#autotoc_md14',1,'']]],
+  ['device_20and_20queues_10',['Logical Device and Queues',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2clear__color__example.html#autotoc_md15',1,'']]],
+  ['draw_20loop_20architecture_11',['Draw Loop Architecture',['../md__c_1_2__home_2desktop_2github_2shvulkan_2docs_2src_2scene__example.html#autotoc_md22',1,'']]]
 ];
